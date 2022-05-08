@@ -1,0 +1,101 @@
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  display: none;
+}
+
+.aboutTeam {
+  background-color: #e0e0e0;
+  width: 100%;
+  padding: 20px;
+}
+
+.aboutTeam .section-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.aboutTeam .member-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 0;
+}
+
+.aboutTeam .member-container .member {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  margin: 10px 0 0;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.aboutTeam .member-container .member:first-child,
+.aboutTeam .member-container .member .member-profile .name {
+  margin: 0;
+}
+
+.aboutTeam .member-container .member .member-profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.aboutTeam .member-container .member-profile > div {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.aboutTeam .member-container .member-profile > div::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.aboutTeam .member-container .member-profile .name::before {
+  background-image: url("./src/name.png");
+}
+
+.aboutTeam .member-container .member-profile .birth::before {
+  background-image: url("./src/birth.png");
+}
+
+.aboutTeam .member-container .member-profile .address::before {
+  background-image: url("./src/address.png");
+}
+
+.aboutTeam .member-container .member-profile .tel::before {
+  background-image: url("./src/tel.png");
+}
+
+.aboutTeam .member-container .member-profile .mail::before {
+  background-image: url("./src/mail.png");
+}
+
+.aboutTeam .member-container .member-profile .academic::before {
+  background-image: url("./src/academic.png");
+}
+
+.aboutTeam .member-container .member-profile .title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  flex: 1 1 40%;
+}
+
+.aboutTeam .member-container .member-profile .content {
+  font-size: 1.2rem;
+  flex: 1 1 60%;
+}
