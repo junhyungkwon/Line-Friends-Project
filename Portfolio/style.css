@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Nanum Gothic', sans-serif;
+  /* font-family: 'Nanum Gothic', sans-serif; */
 }
 
 :root {
@@ -11,8 +11,9 @@
   --red-color: #FF0000;
 
   --font-mobile: 10px;
-  --font-tablet: 8px;
-  --font-desktop: 11px;
+  --font-tablet-r: 10px;
+  --font-tablet: 12px;
+  --font-desktop: 12px;
 
   --font-small: 1rem;
   --font-medium: 1.5rem;
@@ -24,13 +25,13 @@
   --space-medium: 1.5rem;
   --space-large: 2rem; 
   --space-xl: 2.5rem;
+  --space-xxl: 3rem;
 
   font-size: var(--font-mobile);
 }
 
 body {
   min-width: 370px;
-  height: 100vh;
 }
 
 .sr-only {
@@ -38,16 +39,15 @@ body {
 }
 
 .aboutTeam {
-  background-color: #e0e0e0;
-  width: 100%;
   padding: var(--space-large);
+  background-color: rgb(236, 236, 236);
 }
 
 .aboutTeam .section-title {
   font-size: var(--font-section-title);
   font-weight: 800;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
+  border-bottom: 1px solid #000;
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 .aboutTeam .member-container {
@@ -58,22 +58,21 @@ body {
 }
 
 .aboutTeam .member-container .member {
-  background-color: #fff;
-  width: 100%;
-  margin: 10px 0 0;
-  padding: var(--space-xl);
-  border-radius: 20px;
-}
-
-.aboutTeam .member-container .member:first-child,
-.aboutTeam .member-container .member .member .name {
-  margin: 0;
-}
-
-.aboutTeam .member-container .member {
   display: flex;
   flex-direction: column;
   width: 80%;
+  background-color: rgba(255, 255, 255, 0.771);
+  margin: 10px 0 0;
+  padding: var(--space-xxl);
+  border-radius: 20px;
+  width: 80%;
+
+  box-shadow: 2px 6px 10px rgba(82, 82, 82, 0.3);
+}
+
+.aboutTeam .member-container .member:first-child,
+.aboutTeam .member-container .member .name {
+  margin: 0;
 }
 
 .aboutTeam .member-container .member > div {
@@ -83,38 +82,31 @@ body {
   font-family: 'Gowun Dodum', sans-serif;
 }
 
-.aboutTeam .member-container .member > div .title::before {
+.aboutTeam .member-container .member > div::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+  width: 3rem;
+  height: 3rem;
+  margin-right: var(--space-small);
   background-size: contain;
   background-repeat: no-repeat;
+  flex: 0 0 30%;
 }
 
-.aboutTeam .member-container .member .name .title::before {
+.aboutTeam .member-container .member .name::before {
   background-image: url("./src/Icons/name.png");
 }
 
-.aboutTeam .member-container .member .birth .title::before {
+.aboutTeam .member-container .member .birth::before {
   background-image: url("./src/Icons/birth.png");
 }
 
-.aboutTeam .member-container .member .address .title::before {
-  background-image: url("./src/Icons/address.png");
-}
-
-.aboutTeam .member-container .member .tel .title::before {
+.aboutTeam .member-container .member .tel::before {
   background-image: url("./src/Icons/tel.png");
 }
 
-.aboutTeam .member-container .member .mail .title::before {
+.aboutTeam .member-container .member .mail::before {
   background-image: url("./src/Icons/mail.png");
-}
-
-.aboutTeam .member-container .member .academic .title::before {
-  background-image: url("./src/Icons/academic.png");
 }
 
 .aboutTeam .member-container .member .title {
@@ -130,39 +122,31 @@ body {
   flex: 1 1 65%;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 760px) {
   :root {
     font-size: var(--font-tablet);
   }
 
   .aboutTeam .member-container .member {
-    margin: 0 0 0 var(--space-medium) ;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .aboutTeam .member-container .member > div {
     width: 50%;
-    flex-direction: column;
   }
 
-  .aboutTeam .member-container .member > div .title {
-    margin-bottom: var(--space-small);
-  }
-  .aboutTeam .member-container .member > div .content {
-    margin-bottom: var(--space-medium);
+  .aboutTeam .member-container .member > div > div {
+    flex: 1 1 30%;
   }
 }
 
 
 @media (min-width: 768px) {
   :root {
-    font-size: var(--font-tablet);
+    font-size: var(--font-tablet-r);
   }
 
-  .aboutTeam .section-title {
-    padding: var(--space-large);
-  }
 
   .aboutTeam .member-container {
     flex-direction: row;
@@ -183,6 +167,7 @@ body {
 
   .aboutTeam .member-container .member > div .title {
     margin-bottom: var(--space-small);
+    font-size: var(--font-medium);
   }
   .aboutTeam .member-container .member > div .content {
     margin-bottom: var(--space-medium);
@@ -206,6 +191,6 @@ body {
   }
 
   .aboutTeam .member-container .member > div {
-    width: 33%;
+    /* width: 33%; */
   }
 }
