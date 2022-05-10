@@ -1,0 +1,168 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --blue-color: #1266D5;
+  --red-color: #FF0000;
+
+  --font-mobile: 20px;
+  --font-tablet-r: 10px;
+  --font-tablet: 12px;
+  --font-desktop: 16px;
+
+  --font-s: 1rem;
+  --font-m: 1.3rem;
+  --font-l: 1.5rem;
+  --font-xl: 2rem;
+
+  --font-section-title: 5rem;
+
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem; 
+  --space-xl: 2.5rem;
+  --space-xxl: 3rem;
+
+  font-size: var(--font-desktop);
+}
+
+.sr-only {
+  display: none;
+}
+
+* {
+  margin: 0;
+}
+
+
+.aboutTeam {
+  background-color: rgb(230, 230, 230);
+}
+
+.aboutTeam .container {
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 var(--space-s);
+}
+
+.aboutTeam .section-title {
+  display: inline-flex;
+  margin: var(--space-l);
+  border-bottom: 1px solid rgb(145, 145, 145);
+  font-size: var(--font-xl);
+}
+
+.aboutTeam .member-container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center;
+}
+
+.aboutTeam .member-container .member {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-m);
+  margin-bottom: var(--space-m);
+  border-radius: 20px;
+  box-shadow: 2px 6px 10px rgba(82, 82, 82, 0.3);
+  background-color: #fff;
+  color:rgba(82, 82, 82);
+}
+
+.aboutTeam .member-container .member > div {
+  display: flex;
+  margin: var(--space-s);
+}
+
+.aboutTeam .member-container .member .icon {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: var(--space-m);
+  font-size: var(--font-xl);
+  flex: 1 0 1;
+}
+
+.aboutTeam .member-container .member > div .info .title {
+  font-size: var(--font-m);
+  font-weight: 700;
+}
+
+
+
+
+
+@media (min-width: 480px) { 
+  .aboutTeam .member-container .member {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .aboutTeam .member-container .member > div {
+    width: 40%;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .aboutTeam .container {
+    padding: var(--space-l);
+  }
+
+  .aboutTeam .member-container {
+    width: 80%;
+  }
+  
+  .aboutTeam .member-container .member {
+    padding: var(--space-xl);
+  }
+
+  .aboutTeam .member-container .member > div {
+    flex-direction: row;
+  }
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+  .aboutTeam .member-container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .aboutTeam .member-container .member {
+    width: 100%;
+    padding: var(--space-m);
+    margin: var(--space-xs);
+  }
+
+  .aboutTeam .member-container .member > div {
+    width: 100%;
+  }
+
+  .aboutTeam .member-container .member > div .icon {
+    margin-right: var(--space-l);
+  }
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+  .aboutTeam .member-container .member {
+    width: 25%;
+    margin: var(--space-xs);
+  }
+}
