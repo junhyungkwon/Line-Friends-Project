@@ -1,20 +1,21 @@
 :root {
   --white-color: #fff;
   --black-color: #000;
-  --blue-color: #1266D5;
+  --blue-color: #0000FF;
   --red-color: #FF0000;
 
-  --font-mobile: 20px;
+  /* --font-mobile: 20px;
   --font-tablet-r: 10px;
   --font-tablet: 12px;
-  --font-desktop: 16px;
+  --font-desktop: 16px; */
 
   --font-s: 1rem;
   --font-m: 1.3rem;
   --font-l: 1.5rem;
   --font-xl: 2rem;
+  --font-xxl: 2.5rem;
 
-  --font-section-title: 5rem;
+  --font-section-title: 50px;
 
   --space-xs: 0.5rem;
   --space-s: 1rem;
@@ -23,7 +24,7 @@
   --space-xl: 2.5rem;
   --space-xxl: 3rem;
 
-  font-size: var(--font-desktop);
+  font-size: 16px;
 }
 
 .sr-only {
@@ -45,13 +46,33 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 0 var(--space-s);
+  padding: var(--space-s);
 }
 
-.aboutTeam .section-title {
+.aboutTeam .container .title {
+  display: flex;
+  align-items: baseline;
+}
+
+.aboutTeam .container .title .section-link {
+  display: flex;
+  flex: 1 0 1;
+  padding-top: var(--space-xl);
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 35px;
+}
+
+.aboutTeam .container .title .section-link:hover {
+  opacity: 0.7;
+}
+
+.aboutTeam .container .title .section-title {
   display: inline-flex;
-  margin: var(--space-l);
+  margin: var(--space-xs);
+  margin-bottom: var(--space-xl);
   border-bottom: 1px solid rgb(145, 145, 145);
+  padding-bottom: var(--space-xs);
   font-size: var(--font-xl);
 }
 
@@ -71,6 +92,11 @@
   box-shadow: 2px 6px 10px rgba(82, 82, 82, 0.3);
   background-color: #fff;
   color:rgba(82, 82, 82);
+}
+
+.aboutTeam .member-container .member:hover {
+  transform: translateY(+5px);
+  transition: transform 0.3s;
 }
 
 .aboutTeam .member-container .member > div {
@@ -98,6 +124,11 @@
 
 
 @media (min-width: 480px) { 
+  
+  .aboutTeam .container .title .section-title {
+    font-size: var(--font-xxl);
+  }
+
   .aboutTeam .member-container .member {
     flex-direction: row;
     flex-wrap: wrap;
@@ -117,6 +148,10 @@
 @media (min-width: 768px) {
   .aboutTeam .container {
     padding: var(--space-l);
+  }
+
+  .aboutTeam .container .title .section-title {
+    font-size: var(--font-section-title);
   }
 
   .aboutTeam .member-container {
