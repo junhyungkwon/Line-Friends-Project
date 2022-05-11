@@ -1,0 +1,143 @@
+:root {
+    --text-color: #f0f4f5;
+    --background-color: #FFFFFFB3;
+    --accent-color: #d49466;
+  }
+  
+  * {
+   
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Source Sans Pro';
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    
+  }
+  .text__member {
+    height:0px;
+    
+  }
+  .text__member {
+    width: 40%;
+    margin: 10px auto;
+    border: -1px solid #000000;
+  }
+  .text__member img {
+    width: 1000, 900;
+    vertical-align: middle;
+  }
+  .text {
+    padding: 5px 10px;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #FFFFFF;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: var(--background-color);
+  }
+  
+ 
+  .navbar__logo {
+    font-size: 24px;
+    color: var(--text-color);
+    padding-top: 10px ;
+    padding-left: 150px;
+    
+  }
+  
+  
+  
+  
+  .navbar__menu {
+    display: flex;
+    font-size: 20px;
+    list-style: none;
+    
+    
+  }
+  
+  .navbar__menu li {
+    padding: 8px 12px;
+  }
+  
+  .navbar__menu li:hover {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+  }
+  .navbar__icons {
+    list-style: none;
+    color: var(--text-color);
+    display: flex;
+    padding-left: 0;
+  }
+  
+  
+  .navbar__icons li {
+    padding: 8px 12px;
+  }
+  
+  
+  .navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: var(--accent-color);
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 8px 24px;
+    }
+  
+    
+    .navbar__menu {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      
+    }
+  
+    .navbar__menu a {
+     
+      display: block;
+    }
+  
+    
+    .navbar__icons {
+      display: none;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    
+    .navbar__toggleBtn {
+      display: block;
+    }
+  
+    
+    .navbar__menu.active,
+    .navbar__icons.active {
+      display: flex;
+    }
+  }
