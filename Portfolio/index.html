@@ -1,25 +1,71 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Team</title>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Team Portfolio</title>
+
+  <script src="https://kit.fontawesome.com/2d323a629b.js" crossorigin="anonymous"></script>
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/3c81013ac0.js" crossorigin="anonymous"></script>
-
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Roboto:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
 
   <!-- About Team CSS -->
-  <link rel="stylesheet" href="./style2.css" />
-  
-  <!-- <script src="./index2.js" defer></script> -->
+  <link rel="stylesheet" href="./css/style1.css" />
+  <link rel="stylesheet" href="./css/style2.css" />
+  <link rel="stylesheet" href="./css/style3.css" />
+
+  <script src="main.js" defer></script>
+
 </head>
+
+
 <body>
+  <section id="intro">
+    <div class="text__member">
+      <div class="text__image"></div>
+      <div class="text">
+        -Member-<br>
+        웹 개발자 포트폴리오
+        <hr class="rounded">
+        <br>
+        <div class="text1">
+           안녕하세요.
+          <br>
+          공부가 취미인 웹 개발자입니다.
+          <br>
+          매우 꼼꼼한 성격, 그리고 공부를 밥 먹듯이 하는 습관이 저희 장점입니다.
+          <br><br>
+          <div class="wrap">
+            <div class="c22"><a href="#">더 알아보기↓</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <a href="">Team Portfolio</a>
+      </div>
+      <ul class="navbar__menu">
+        <li><a href="">Member</a></li>
+        <li><a href="">Skills</a></li>
+        <li><a href="">Archiving</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Career</a></li>
+      </ul>
+
+
+      <a href="#" class="navbar__toggleBtn">
+        <i class="fas fa-bars"></i>
+      </a>
+    </nav>
+  </section>
+
   <section id="aboutTeam">
     <div class="container">
       <div class="title">
@@ -27,13 +73,13 @@
           <span class="section-link fa-solid fa-link"></span>
         </a>
         <h2 class="section-title">ABOUT TEAM</h2>
-      </div>    
+      </div>
       <div class="member-container">
         <div class="member">
           <h3 class="sr-only">강아람</h3>
           <div class="name">
             <div class="icon fa-solid fa-user"></div>
-            <div class="info">            
+            <div class="info">
               <div class="title">NAME</div>
               <div class="content">강아람</div>
             </div>
@@ -50,7 +96,7 @@
             <div class="info">
               <div class="title">PHONE</div>
               <div class="content">010-3796-6088</div>
-            </div>  
+            </div>
           </div>
           <div class="mail">
             <div class="icon fa-solid fa-envelope"></div>
@@ -111,7 +157,7 @@
             <div class="icon fa-solid fa-mobile-screen-button"></div>
             <div class="info">
               <div class="title">PHONE</div>
-              <div class="content">010-9742-6454</div>    
+              <div class="content">010-9742-6454</div>
             </div>
           </div>
           <div class="mail">
@@ -125,5 +171,56 @@
       </div>
     </div>
   </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="skills-content">
+      <div class="skills-title">
+        <a href="#skills">
+          <span class="skills-link fa-solid fa-link"></span>
+        </a>
+        <div class="skills-title-text">SKILLS</div>
+      </div>
+      <div class="skills-tech">
+        <div class="skills-tech-container">
+          <div class="skills-tech-title">Frontend</div>
+          <div class="skills-tech-img">
+            <img src="img/frontend-skills.jpg" alt="frontend skill">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Archiving -->
+  <section id="archiving">
+    <div class="archiving-content">
+      <div class="archiving-title">
+        <a href="#archiving">
+          <i class="archiving-link fa-solid fa-link"></i>
+        </a>
+        <div class="archiving-title-text">ARCHIVING</div>
+      </div>
+      <div class="archiving-info">
+        <div class="archiving-container">
+          <div class="archiving-info-title">
+            <img src="img/notion-logo.png" alt="notion">
+          </div>
+          <div class="archiving-info-url">
+            <a href="https://www.notion.so/f21e7128aa9540948d185422d7ea5106?v=e39b4e7f77e044aba2a0495f3b43ab25"
+              target="_blank">https://www.notion.so/f21e7128aa9540948d185422d7ea5106?v=e39b4e7f77e044aba2a0495f3b43ab25</a>
+          </div>
+          <div class="archiving-info-description">
+            <p><b>Notion</b></p>
+            <ul>
+              <li>설명1</li>
+              <li>설명2</li>
+              <li>설명3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
