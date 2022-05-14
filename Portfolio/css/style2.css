@@ -62,10 +62,10 @@
 #aboutTeam .container .title .section-link {
   position: absolute;
   top: 35%;
-  left: -15%;
+  left: -17%;
   opacity: 0.5;
   cursor: pointer;
-  font-size: 35px;
+  font-size: 30px;
   color: black;
   opacity: 0.5;
 }
@@ -86,6 +86,7 @@
 #aboutTeam .member-container {
   display: flex;
   flex-direction: column;
+  padding: var(--space-xs);
   width: 90%;
   justify-content: center;
 }
@@ -93,7 +94,7 @@
 #aboutTeam .member-container .member {
   display: flex;
   flex-direction: column;
-  padding: var(--space-m);
+  padding: var(--space-s);
   margin-bottom: var(--space-m);
   border-radius: 20px;
   box-shadow: 2px 6px 10px rgba(82, 82, 82, 0.3);
@@ -138,7 +139,22 @@
     font-size: var(--font-xxl);
   }
 
+  #aboutTeam .member-container {
+    margin: auto 0;
+  }
+  
+  #aboutTeam .container .title .section-link {
+    font-size: 35px;
+  }
+
+  #aboutTeam .member-container {
+    align-items: center;
+    width: 500px;
+  }
+
   #aboutTeam .member-container .member {
+    width: 100%;
+    padding: 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -156,7 +172,7 @@
 
 @media (min-width: 768px) {
   #aboutTeam .container {
-    padding: var(--space-l);
+    padding: var(--space-m);
   }
 
   #aboutTeam .container .title .section-title {
@@ -164,7 +180,7 @@
   }
 
   #aboutTeam .member-container {
-    width: 80%;
+    padding: 0;
   }
   
   #aboutTeam .member-container .member {
@@ -172,6 +188,8 @@
   }
 
   #aboutTeam .member-container .member > div {
+    
+    width: 42%;
     flex-direction: row;
   }
 }
@@ -184,6 +202,7 @@
   #aboutTeam .member-container {
     flex-direction: row;
     width: 100%;
+    margin-bottom: 17px;
   }
   #aboutTeam .member-container .member {
     width: 100%;
