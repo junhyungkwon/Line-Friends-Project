@@ -53,17 +53,20 @@
 }
 
 #aboutTeam .container .title {
+  position: relative;
   display: flex;
   align-items: baseline;
 }
 
 #aboutTeam .container .title .section-link {
-  display: flex;
-  flex: 1 0 1;
-  padding-top: var(--space-xl);
+  position: absolute;
+  top: 20%;
+  left: -17%;
   opacity: 0.5;
   cursor: pointer;
   font-size: 35px;
+  color: black;
+  opacity: 0.5;
 }
 
 #aboutTeam .container .title .section-link:hover {
