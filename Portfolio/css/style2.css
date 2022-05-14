@@ -52,16 +52,17 @@
   padding: var(--space-s);
 }
 
-#aboutTeam .container .title {
+#aboutTeam .container > .title {
   position: relative;
   display: flex;
   align-items: baseline;
+  padding-top: 20px;
 }
 
 #aboutTeam .container .title .section-link {
   position: absolute;
-  top: 20%;
-  left: -17%;
+  top: 35%;
+  left: -15%;
   opacity: 0.5;
   cursor: pointer;
   font-size: 35px;
