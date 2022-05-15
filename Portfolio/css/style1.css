@@ -28,7 +28,7 @@ a {
 }
 
 #intro {
-  background-image: url("/Portfolio/img/cpt.jpeg");
+  background-image: url("../img/cpt.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
