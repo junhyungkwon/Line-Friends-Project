@@ -28,11 +28,11 @@ a {
 }
 
 #intro {
+  background-image: url("/Portfolio/img/cpt.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 800px;
-}
-
-img {
-  height: 900px;
 }
 
 .text__member {
@@ -40,12 +40,6 @@ img {
   margin: 0px auto;
   border: -1px solid #000000;
   height: 0px;
-
-}
-
-img {
-  width: 100%;
-  padding-bottom: 90px;
 
 }
 
